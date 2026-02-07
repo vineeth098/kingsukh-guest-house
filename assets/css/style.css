@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding-top: 70px;
+}
+.hero {
+  height: 100vh;
+  background: linear-gradient(
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.6)
+    ),
+    url('../images/hero.jpg') center/cover no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.btn {
+  background: #c19a6b;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.rooms, .gallery, .contact, .content {
+  padding: 40px;
+  text-align: center;
+}
+
+.room-card {
+  display: inline-block;
+  margin: 20px;
+}
+
+.room-card img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.gallery-grid img {
+  width: 250px;
+  margin: 10px;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.btn:hover {
+  background: #a88355;
+}
+
+/* Improve hero text readability */
+
+/* Contact form styling */
+.contact form {
+  max-width: 500px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+}
+
+.contact textarea {
+  resize: none;
+  height: 120px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .room-card,
+  .gallery-grid img {
+    width: 90%;
+  }
+}
